@@ -1,0 +1,167 @@
+*{
+    background-color: #355E3B;
+    color: lightgray;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/* Header Styles */
+
+    /*Sticky NavBar*/
+
+header{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+}
+
+.topBar{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: sticky;
+}
+
+.topBar a{
+    text-decoration: none;
+    padding: 10px 25px;
+    display: inline-block;
+    font-size: 14pt;
+    border-radius: 10px;
+    background: linear-gradient(to left, #355E3B 50%, #FFD464 50%) right;
+    background-size: 201%;
+    transition: .5s ease-out;
+    
+}
+
+.topBar a:hover{
+    background-position: left;
+    color: black
+}
+
+
+.mainHead{
+    padding: 150px 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 600px){
+    .topBar{
+        display: none;
+    }
+
+    .mainHead{
+        padding: 25px 10px;
+    }
+
+}
+
+@media screen and (max-width: 999px){
+    .mainHead{
+        padding: 25px 10px;
+    }
+}
+
+    /* Main Name Headings */
+
+.mainHead p{
+    color:#FFD464
+}
+
+.mainHead h1{
+    font-size: 40pt;
+    padding-right: 6px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.typeAnimation{
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid #FFD464; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    animation: 
+      typing 2.25s steps(40, end),
+      blink-caret .75s step-end infinite;
+}
+
+.occupationType{
+    display: inline !important;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    white-space: nowrap; /* Keeps the content on a single line */
+    animation: 
+      typingO 3s steps(60, end),
+      blink-caret .75s step-end infinite;
+}
+
+#unAnimated{
+    display: none;
+    border-right: .15em solid #FFD464; /* The typwriter cursor */
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 315px }
+  }
+
+@keyframes typingO{
+    from { width: 0 }
+    to { width: 565px }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color:#FFD464; }
+}
+
+.name{
+    color: white !important;
+    display: flex
+}
+
+.occupation{
+    display: flex;
+}
+
+#blurb{
+    display: none;
+}
+
+.blurb{
+    display: block !important;
+    width: 565px;
+    line-height: 30px;
+    animation: blurb 5s ease-in-out;
+}
+
+@keyframes blurb{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+
+@media screen and (max-width: 600px){
+    .mainHead h1{
+        font-size: 20pt;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .mainHead div h1{
+        border-right: none;
+    }
+
+    #unAnimated{
+        border-right: none;
+    }
+
+    .blurb{
+        width: 80vw;
+    }
+}
+
+
