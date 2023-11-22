@@ -191,6 +191,10 @@ header{
     display: inline;
 }
 
+.aboutText h2{
+    font-size: 24pt;
+}
+
 .yellow{
     color: #FFD464;
 }
@@ -201,3 +205,68 @@ header{
     border-radius: 50%;
 }
 
+@media screen and (max-width: 600px){
+   #about{
+    padding: 25px 10px;
+    flex-direction: column;
+    align-items: flex-start;
+   }
+
+   .headshot{
+    display: none;
+   }
+
+   .aboutText{
+    width: 80vw;
+   }
+
+   .aboutText h2{
+    font-size: 16pt;
+}
+
+}
+
+@media screen and (max-width: 999px){
+    #about{
+        padding: 25px 10px;
+    }
+
+    .headshot{
+        height: 150px;
+        width: 150px;
+       }
+
+    .aboutText{
+        width: 70vw;
+        }
+}
+
+/* Projects */
+
+#projects{
+    padding: 0px 200px 150px 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.projBox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 150px;
+}
+
+.projBox h5{
+    color: #FFD464;
+    margin-bottom: 0px;
+}
+
+.projBox h2{
+    color: white;
+    margin-top: 10px;
+}
+
+.projBox img{
+    max-width: 400px;
+    margin-left: 100px;
+}

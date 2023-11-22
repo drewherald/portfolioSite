@@ -1,3 +1,4 @@
+// header animations
 
 setTimeout(() =>{
     document.getElementById("animatedName").classList.remove('typeAnimation')
