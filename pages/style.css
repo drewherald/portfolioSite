@@ -326,10 +326,12 @@ header{
     padding: 8px 10px;
     border-radius: 8px;
     cursor: pointer;
+    transition: all .3s ease-in-out;
 }
 
 .projBox div a:hover{
     background-color: #FFD464;
+    font-size: 1.01rem;
 }
 
 @media screen and (max-width: 600px){
