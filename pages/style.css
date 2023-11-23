@@ -57,7 +57,7 @@ header{
 
 }
 
-@media screen and (max-width: 999px){
+@media screen and (max-width: 1100px){
     .mainHead{
         padding: 25px 10px;
     }
@@ -226,7 +226,7 @@ header{
 
 }
 
-@media screen and (max-width: 999px){
+@media screen and (max-width: 1100px){
     #about{
         padding: 25px 10px;
     }
@@ -244,7 +244,7 @@ header{
 /* Projects */
 
 #projects{
-    padding: 0px 200px 150px 200px;
+    padding: 0px 200px 350px 200px;
     display: flex;
     flex-direction: column;
 }
@@ -266,7 +266,110 @@ header{
     margin-top: 10px;
 }
 
+.projBox p{
+    font-size: 16px;
+}
+
 .projBox img{
     max-width: 400px;
     margin-left: 100px;
+}
+
+.projBox div a{
+    background-color: lightgray; 
+    border: none;
+    color: #355E3B;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 8px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.projBox div a:hover{
+    background-color: #FFD464;
+}
+
+@media screen and (max-width: 600px){
+    .projBox{
+        flex-direction: column;
+        padding-bottom: 50px;
+    }
+ 
+    #projects{
+        padding: 25px 10px;
+    }
+
+    .projBox img{
+        max-width: 250px;
+        margin-top: 50px;
+        margin-left: 0;
+    }
+ }
+
+ @media screen and (max-width: 1100px){
+    #projects{
+        padding: 25px 10px;
+    }
+
+    
+}
+
+/* contact/footer */
+
+#contact{
+    padding: 0px 400px 350px 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+#contact h3{
+    font-size: 24pt;
+    color: white;
+    margin-bottom: 0;
+}
+
+#contact p{
+    color: #FFD464;
+}
+
+.contactLink a{
+    background-color: lightgray; 
+    border: none;
+    color: #355E3B;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 8px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: inline;
+}
+
+.contactLink a:hover{
+    background-color: #FFD464;
+}
+
+.contactLink{
+ display: flex;
+ justify-content: center;
+}
+
+
+@media screen and (max-width: 600px){
+
+    #contact{
+        padding: 25px 10px;
+    }
+
+    #contact h3{
+        font-size: 20pt;
+    }
+ }
+
+ @media screen and (max-width: 1100px){
+    #contact{
+        padding: 25px 10px;
+    }
 }
