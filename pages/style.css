@@ -357,6 +357,17 @@ header{
     
 }
 
+    /* animate on scroll */
+
+    .animate-via-scroll{
+        opacity: 0;
+        transition: all 1s ease-out 0.2s;
+    }
+
+    .animated-via-scroll{
+        opacity: 1;
+    }
+
 /* contact/footer */
 
 #contact{
@@ -394,7 +405,7 @@ header{
 
 .contactLink{
  display: flex;
- justify-content: center;
+ justify-content: flex-start;
 }
 
 
@@ -413,4 +424,11 @@ header{
     #contact{
         padding: 25px 10px;
     }
+}
+
+/* Footer */
+footer p{
+    text-align: center;
+    font-size: 8pt;
+    margin: 5px;
 }
